@@ -5,15 +5,15 @@ This is a simple exercise to start using nodejs and express
 first created all the folders from command line
 
 ```
-**hello-world**
- |- **db** [seed data and scripts for MongoDB]
- |- **views** [view files, html, jade]
-     |- **includes** [partial views]
- |- **public** [all the static front-end files, including HTML, CSS, JavaScript]
-     |- **css** [the styling sheets]
-     |- **img** [images used in the application]
-     |- **js**  [JavaScript files]
- |- **routes** [the routes to the different models]
+hello-world
+ |- db [seed data and scripts for MongoDB]
+ |- views [view files, html, jade]
+     |- includes [partial views]
+ |- public [all the static front-end files, including HTML, CSS, JavaScript]
+     |- css [the styling sheets]
+     |- img [images used in the application]
+     |- js  [JavaScript files]
+ |- routes [the routes to the different models]
 ```
 
 ### Creating the package.json file
@@ -37,7 +37,9 @@ this is where you have to require the dependencies to use in your app like:
 
 2. Configure Settings
 the settings of your app, like ports, paths, etc.
-```app.set('port', process.env.PORT || 3000);```
+```
+app.set('port', process.env.PORT || 3000);
+```
 
 3. Connect to DataBase [optional]
 4. Define Middleware
